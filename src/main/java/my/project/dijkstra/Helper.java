@@ -104,13 +104,27 @@ public class Helper {
 		return linkEntranceExit(entranceExit);
 	}
 
-	// TODO
+	/**
+	 *
+	 * Determines if the x, y coordinate pair is at the edge of the maze.
+	 *
+	 * @param x x coordinate of the pixel in the maze
+	 * @param y y coordinate of the pixel in the maze
+	 * @return whether or not the coordinate pair is at the edge of the maze.
+	 */
 	private boolean isNotEdgeOfMap(int x, int y){
 
 		return x != 0 && y != 0 && x != image.getHeight() - 1 && y != image.getWidth() - 1;
 	}
 
-	// TODO
+	/**
+	 *
+	 * Colors the exit pixel red.
+	 *
+	 * @param x x coordinate of the exit pixel.
+	 * @param y y coordinate of the exit pixel.
+	 * @return true that an exit has been made.
+	 */
 	private boolean makeExit(int x, int y){
 
 		System.out.println("Exit at (" + y + ", " + x + ")");
@@ -122,7 +136,14 @@ public class Helper {
 		return true;
 	}
 
-	// TODO
+	/**
+	 *
+	 * Colors the entrance pixel red.
+	 *
+	 * @param x x coordinate of the entrance pixel.
+	 * @param y y coordinate of the entrance pixel.
+	 * @return true that an entrance has been made.
+	 */
 	private boolean makeEntrance(int x, int y){
 
 		System.out.println("Entrance at (" + y + ", " + x + ")");
